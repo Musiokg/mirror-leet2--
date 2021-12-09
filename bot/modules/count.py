@@ -35,7 +35,7 @@ def countNode(update, context):
         else:
             uname = f'<a href="tg://user?id={update.message.from_user.id}">{update.message.from_user.first_name}</a>'
         if uname is not None:
-            cc = f'\n\n<b>cc: </b>{uname}'
+            cc = f'\n\n<b>👉 count by 🌟: </b>{uname}'
         sendMessage(result + cc, context.bot, update)
         if gdtot_link:
             gd.deletefile(link)
