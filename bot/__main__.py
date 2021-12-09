@@ -43,20 +43,20 @@ def stats(update, context):
     mem_t = get_readable_file_size(memory.total)
     mem_a = get_readable_file_size(memory.available)
     mem_u = get_readable_file_size(memory.used)
-    stats = f'<b>Bot Uptime:</b> {currentTime}\n\n'\
-            f'<b>Total Disk Space:</b> {total}\n'\
-            f'<b>Used:</b> {used} | <b>Free:</b> {free}\n\n'\
-            f'<b>Upload:</b> {sent}\n'\
-            f'<b>Download:</b> {recv}\n\n'\
-            f'<b>CPU:</b> {cpuUsage}%\n'\
-            f'<b>RAM:</b> {mem_p}%\n'\
-            f'<b>DISK:</b> {disk}%\n\n'\
-            f'<b>Physical Cores:</b> {p_core}\n'\
-            f'<b>Total Cores:</b> {t_core}\n\n'\
-            f'<b>SWAP:</b> {swap_t} | <b>Used:</b> {swap_p}%\n'\
-            f'<b>Memory Total:</b> {mem_t}\n'\
-            f'<b>Memory Free:</b> {mem_a}\n'\
-            f'<b>Memory Used:</b> {mem_u}\n'
+    stats = f'<b> 👉 Bot Uptime 🌟:</b> {currentTime}\n\n'\
+            f'<b>🗂 Total Disk Space 💝:</b> {total}\n'\
+            f'<b>🔰 Used 🔥:</b> {used} | <b>Free:</b> {free}\n\n'\
+            f'<b>⏫ Upload-:</b> {sent}\n'\
+            f'<b>👉 Download ⏬:</b> {recv}\n\n'\
+            f'<b>🖥 CPU 💾:</b> {cpuUsage}%\n'\
+            f'<b>🪓 RAM 💞:</b> {mem_p}%\n'\
+            f'<b>⭐ DISK 💽:</b> {disk}%\n\n'\
+            f'<b>🛡 Physical Cores 📡:</b> {p_core}\n'\
+            f'<b>🖨 Total Cores 🧰:</b> {t_core}\n\n'\
+            f'<b>💌 SWAP 🕯:</b> {swap_t} | <b>Used:</b> {swap_p}%\n'\
+            f'<b>🗜 Memory Total ⚔:</b> {mem_t}\n'\
+            f'<b>🛠 Memory Free🗑 :</b> {mem_a}\n'\
+            f'<b>🗄 Memory Used 🔬:</b> {mem_u}\n'
     sendMessage(stats, context.bot, update)
 
 
