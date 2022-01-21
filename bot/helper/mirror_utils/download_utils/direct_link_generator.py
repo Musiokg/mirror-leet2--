@@ -58,7 +58,25 @@ def direct_link_generator(link: str):
         return fembed(link)
     elif 'fembed.com' in link:
         return fembed(link)
+    elif 'embedsito.com' in link:
+        return fembed(link)
+    elif 'asianclub.tv' in link:
+        return fembed(link)
+    elif 'mycloudzz.com' in link:
+     return fembed(link)
+    elif 'gaobook.review' in link:
+        return fembed(link)
+    elif 'smartshare.tv' in link:
+        return fembed(link)
+    elif 'watchjavnow.xyz' in link:
+        return fembed(link)
+    elif 'watch-jav-english.live' in link:
+        return fembed(link)
+    elif 'cloudrls.com' in link:
+        return fembed(link)
     elif 'femax20.com' in link:
+        return fembed(link)
+    elif 'diasfem.com' in link:
         return fembed(link)
     elif 'fcdn.stream' in link:
         return fembed(link)
@@ -467,4 +485,6 @@ def gdtot(url: str) -> str:
     s3 = BeautifulSoup(requests.get(s2, headers=headers, cookies=cookies).content, 'html.parser')
     status = s3.find('h4').text
     raise DirectDownloadLinkException(f"ERROR: {status}")
+
+
 
