@@ -24,9 +24,9 @@ def shell(update, context):
         reply += f"*Stderr*\n<code>{stderr}</code>\n"
         LOGGER.error(f"Shell - {cmd} - {stderr}")
     if len(reply) > 3000:
-        with open('@MirrorDrive #terminal_output.txt', 'w') as file:
+        with open('shell_output.txt', 'w') as file:
             file.write(reply)
-        with open('@MirrorDrive #terminal_output.txt', 'rb') as doc:
+        with open('shell_output.txt', 'rb') as doc:
             context.bot.send_document(
                 document=doc,
                 filename=doc.name,
@@ -39,9 +39,5 @@ def shell(update, context):
 
 
 SHELL_HANDLER = CommandHandler(BotCommands.ShellCommand, shell,
-                                                  filters=CustomFilters.authorized_chat, run_async=True)
-CustomFilters.authorized_user, run_async=True
+                                                  filters=CustomFilters.owner_filter, run_async=True)
 dispatcher.add_handler(SHELL_HANDLER)
-
-
-
